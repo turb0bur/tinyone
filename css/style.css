@@ -1,0 +1,241 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+body{
+	font: 400 16px/1.25 PTSans, sans-serif;
+	color:  #545454;
+}
+
+/* Typography */
+a {
+	text-decoration: none;
+	color:  #010101;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color: #fcdb00;
+	color:  #010101;
+	border: 2px solid #010101;
+	border-radius: 5px;
+	padding: 18px 34px;
+
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: #010101;
+	color:#fcdb00;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 960px;
+}
+/* Tiny Background */
+.ba-inspire {
+	background: url(../img/promo.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+/* Header */
+.ba-header {
+	padding: 58px 0;
+
+}
+.ba-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 43px;
+}
+.ba-menu__item {
+	float: left;
+	margin-left: 72px;
+}
+.ba-menu__item a {
+	display: block;
+	border-top: 3px solid rgba(255, 96, 51, 0);
+}
+.ba-menu__item a:hover {
+	color:  #313841;
+	border-top-color: #545454;;
+}
+/* Promo */
+.ba-section--promo {
+	padding-bottom: 104px;
+}
+.ba-promo {
+	max-width: 400px;
+	margin-top: 68px;
+}
+.ba-title {
+	font-size: 32px;
+	line-height: 1.0;
+	font-weight: 700;
+	margin: 0;
+}
+.ba-title--promo {
+	color: #010101;
+}
+.ba-description {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 400;
+	margin: 0;
+}
+.ba-description--promo {
+	color:  #313841;
+	padding: 22px 0 18px;
+}
+.ba-promo__text {
+	margin: 0;
+}
+.ba-promo-links {
+	padding: 12px 0 0;
+}
+.ba-promo__link {
+	display: inline-block;
+	margin-right: 34px;
+	font-size: 40px;
+}
+.ba-promo__link:hover {
+	color:  #545454;
+}
+.ba-promo__link:active {
+	border: 1px solid #010101;
+}
+.ba-promo-image {
+	padding-right: 50px;
+	position: relative;
+	background: url(../img/fingerprint.png) no-repeat 50% 50%;
+}
+.ba-promo-image__brandname {
+	color:  #fcdb00;
+	font-size: 30px;
+	font-weight: 700;
+	position: absolute;
+	margin: 0;
+	top: 200px;
+	left: 134px;
+}
+.ba-promo-image__brandname:before {
+	content: "";
+	position: absolute;
+	display: block;
+	background: url(../img/fingerprint.png) no-repeat 50% 50%;
+	top: 200px;
+	left: 120px;
+}
+/* Section Features */
+.ba-section--features {
+	padding-top: 118px;
+	padding-bottom: 90px;
+}
+.ba-features {
+	padding: 0 20px 70px;
+
+}
+.ba-title--features {
+	color: #010101;
+}
+.ba-description--features {
+	padding: 14px;
+	margin-bottom: 70px;
+
+}
+.ba-features-item {
+	display: block;
+	position: relative;
+
+}
+.ba-features-item i {
+	font-size: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	height: 100%;
+}
+.ba-features-item__description {
+	padding-left: 44px;
+	text-align: left;
+}
+.ba-features-item__title {
+	color:  #010101;
+	font-size: 22px;
+	line-height: 1.4;
+	font-weight: 400;
+	margin: 0;
+}
+.ba-features-item__text {
+	margin: 0;
+	padding-top: 10px;
+	color:  #898989;
+}
+.ba-grid + .ba-grid {
+    margin-top: 80px;
+}
+/* Footer */
+.ba-footer {
+	background: url(../img/footer.png) no-repeat 50% 50%;
+}
+/* Section Support */
+.ba-section--support {
+	padding-top: 98px ;
+}
+.ba-container--support {
+	max-width: 800px;
+
+}
+.ba-title--support {
+	color: #fcdb00;
+}
+.ba-description--support {
+	padding-top: 24px;
+	padding-bottom: 42px;
+}
+.ba-support-form__email {
+	border-radius: 5px;
+	outline: none;
+	padding: 18px 24px;
+}
